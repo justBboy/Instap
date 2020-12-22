@@ -1,5 +1,4 @@
 # created by virtualenv automatically
-scripts/
 pyvenv.cfg
 .DS_Store
 .env
