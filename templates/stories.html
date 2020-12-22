@@ -1,0 +1,130 @@
+ {% extends 'base.html' %} 
+    
+ {% block content %}
+    <!-- Content -->
+    <article class="content ">
+        
+        <div style="float: left; width: 100%; margin: 0 0 10px 0; text-align: center;">
+            
+        </div>
+        
+        
+        
+        <div class="centered">
+            <section class="index-top">
+                
+                <!-- Instadp Text -->
+                <h1>Download Instagram Stories & View Story Highlights</h1>
+                <p>Search and download Instagram profile pictures or stories like storiesig</p>
+                <!-- /End Instadp Text -->
+                
+            </section>
+            
+            
+            <ul class="index-tab-selector">
+                <li ><a href="{{ url_for('index') }}">Instadp</a></li>
+                <li class="selected"><a href="{{ url_for('stories') }}">Stories</a></li>
+                <li><a href="{{ url_for('reels') }}">Reels</a></li>
+            </ul>
+            
+            
+            <!-- Reels Search Bar -->
+            <!-- /Reels Search Bar -->
+            
+            
+            <section class="index-middle">
+                
+                
+                <div class="section-1">
+                    
+                    <!-- Ad Here  -->
+                    <div class="ad">
+                        <div class="inner">
+                            <div class="limit">
+                                <!-- /22100361254/ca-pub-2226043192845725-tag/adx_instadp_index_embedded_desktop -->
+                                <div id='div-gpt-ad-1600281966710-0'>
+                                    <script>
+                                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1600281966710-0'); });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="section-2">
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!-- Index Text -->
+                    <h2>Instagram story viewer like Storiesig</h2>
+                    <p>If you’re trying to download Instagram stories that one of your friends or favorite celebrities posted, there is no way to do it on Instagram. But you can do it easily with our with our website! Search in the top bar.
+
+                    <p> stories are a feature on Instagram that allows users to post photos or videos that vanish after 24 hours. When a user shares a story, it is ephemeral meaning it can’t be viewed once 24 hours have elapsed. If you’re trying to download an Instagram story that one of your friends or favorite celebrity has posted there is no way to do it on Instagram.</p>
+                
+                    
+                    <h3>Why download ig story?</h3>
+                    <p>Instagram stories downloader is fast, easy and simple. Enter a username to view stories of a user anonymously or to download their amazing story to your desktop or mobile phone.</p>
+                    
+                    <h3>How to download instagram story</h3>
+                    <p>With our website, you can download your story and share it on other social media. You can also download other amazing stories from other creators to save them for offline viewing.</p>
+
+                    <h3>View stories anonymously</h3>
+                    <p>When you view someone’s story they can check and see who viewed it. If you search and view it on our website the user will not see that you viewed it.
+
+                    <p> affiliated with Instagram and we do not host any of the Instagram stories on the website. All rights belong to their respective owners.</p>
+                    <!-- /End Index Text -->
+                    
+                    
+                    
+                </div>
+                
+                
+                <div class="top-users">
+                    <h4>Top Instagrammers</h4>
+                    <ul class="users-list">
+                        {% for user in top_instagrammers %}
+                          <li><a href="{{user.link}}"><i></i>{{user.name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                
+                <ul class="articles-list">
+                    {% for article in articles_list %}
+                        <li>
+                            <a href="{{article.link}}">
+                            <div class="text">
+                                <span class="title">{{article.title}}</span>
+                                <span class="summary">{{article.content}}</span>
+                            </div>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                
+                
+            </section>
+            
+            <!-- Ad Here  -->
+            <div class="ad">
+                <div class="inner">
+                    <div class="limit">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </article>
+    
+    
+    {% endblock content %}

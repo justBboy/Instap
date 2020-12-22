@@ -1,0 +1,129 @@
+ {% extends 'base.html' %} 
+    
+ {% block content %}
+    <!-- Content -->
+    <article class="content ">
+        
+        <div style="float: left; width: 100%; margin: 0 0 10px 0; text-align: center;">
+            
+        </div>
+        
+        
+        
+        <div class="centered">
+            <section class="index-top">
+                
+                <!-- Instadp Text -->
+                <h1>Instadp search profile pictures</h1>
+                <p>Search and download Instagram profile pictures or stories</p>
+                <!-- /End Instadp Text -->
+                
+            </section>
+            
+            
+            <ul class="index-tab-selector">
+                <li class="selected"><a href="{{ url_for('index') }}"></a>Instadp</a></li>
+                <li><a href="{{ url_for('stories') }}">Stories</a></li>
+                <li><a href="{{ url_for('reels') }}">Reels</a></li>
+            </ul>
+            
+            
+            <!-- Reels Search Bar -->
+            <!-- /Reels Search Bar -->
+            
+            
+            <section class="index-middle">
+                
+                
+                <div class="section-1">
+                    
+                    <!-- Ad Here  -->
+                    <div class="ad">
+                        <div class="inner">
+                            <div class="limit">
+                                <!-- /22100361254/ca-pub-2226043192845725-tag/adx_instadp_index_embedded_desktop -->
+                                <div id='div-gpt-ad-1600281966710-0'>
+                                    <script>
+                                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1600281966710-0'); });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="section-2">
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!-- Index Text -->
+                    <h2>Full-Size Instagram Profile Pictures</h2>
+                    <p>Ever wanted to see someone's Insta DP in full size but didn't know how? InstaDP is a free service that allows you to see anyone's Instagram profile picture in high quality. You can search any account!</p>
+                    
+                    <p>When you browse Instagram, the profile pictures are small, and there is no option to enlarge them. Our website lets you zoom in on the profile picture in its original size. For quicker searching and viewing HD Pictures, you can download our app <a href="https://www.qeekapp.com/">Qeek for Instagram</a> on iOS or Android.</p>
+                    <p>If you prefer to use our website, <a href="index.html">InstaDP</a>, instead of our app, you will still be getting a great user experience. Our website was designed to be mobile friendly and look great on any device. Whether you are searching on your iPhone or Android, you will receive the full-size HD Insta DP.</p>
+                    <p>Instagram has over 800 million active users, so we built a search bar that lets you search any user, even if you don't know the exact username. Give it a try!</p>
+                    
+                    <h3>Why Use Insta DP?</h3>
+                    <p>Oftentimes, users can’t find their friends on Instagram because there are multiple accounts with a similar username, and the profile picture is too small to see any details. Users also receive requests for followers that have a private account and an unidentifiable profile picture. This makes it difficult for users to accept or reject a request, because they can’t figure out who the person is.</p>
+                    <p>Whether you’re trying to find out who just sent you a follower request or you’re trying to save your crush’s profile picture onto your phone, InstaDP allows you to quickly and conveniently view full-sized profile pictures just by searching the username.</p>
+                    <p>Thank you for visiting our website. If you have any questions, feel free to <a href="contact.html">Contact Us</a>. Search our website privately and securely to view and zoom in on any Insta DP. No sign in required. Bookmark our webpage to see Instagram profile pictures anytime.</p>
+                    
+                    <h3>Want to <a style="font-weight: 700; font-size: 16px; text-decoration: underline;" href="download-instagram-stories.html">Download Instagram Stories?</a></h3>
+                    <p>If you’re trying to download Instagram stories that one of your friends or favorite celebrities posted, there is no way to do it on Instagram. But you can do it easily with our <a href="download-instagram-stories.html"><b>Instagram Story Download</b></a> tool. Similar to <a href="download-instagram-stories.html"><b>Storiesig</b></a> you simply enter your friends username and search!</p>
+                    <!-- /End Index Text -->
+                    
+                    
+                    
+                </div>
+                
+                
+                <div class="top-users">
+                    <h4>Top Instagrammers</h4>
+                    <ul class="users-list">
+                        {% for user in top_instagrammers %}
+                            <li><a href="{{ user.link }}"><i></i>{{user.name}}</a></li>
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+                
+                
+                <ul class="articles-list">
+                    {% for article in articles_list %}
+                    <li>
+                        <a href="{{article.link}}">
+                            <div class="text">
+                                <span class="title">{{article.title}}</span>
+                                <span class="summary">{{article.content}}</span>
+                            </div>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                
+                
+            </section>
+            
+            <!-- Ad Here  -->
+            <div class="ad">
+                <div class="inner">
+                    <div class="limit">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </article>
+    
+    
+    {% endblock content %}

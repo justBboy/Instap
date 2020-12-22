@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Content -->
+<article class="content ">
+
+				<div style="float: left; width: 100%; margin: 0 0 10px 0; text-align: center;">
+
+		</div>
+		
+
+		
+	<div class="centered">
+		<section class="index-top">
+
+							<!-- Reels Text -->
+				<h1>Download Instagram Reels Video</h1>
+				<p>Search and download Instagram Reels video with our Reels downloader</p>
+				<!-- /End Reels Text -->
+			
+		</section>
+
+
+		<ul class="index-tab-selector">
+			<li><a href="{{ url_for('index') }}">Instadp</a></li>
+			<li><a href="{{ url_for('stories') }}">Stories</a></li>
+			<li class="selected"><a href="{{ url_for('reels') }}">Reels</a></li>
+		</ul>
+
+
+		<!-- Reels Search Bar -->
+					<div class="reels-wrapper">
+				<div class="reels-title">Paste Instagram Reels link:</div>
+				<div class="reel-search-bar">
+					<input type="text" class="search-input" onkeyup="event.keyCode === 13 ? submit_reel() : event.preventDefault()" placeholder="eg: https://www.instagram.com/reel/DHGBF8kmg44/">
+					<input type="button" class="search-btn" onclick="submit_reel()" value="Download">
+				</div>
+				<div class="reel-error">
+					<span class="text">Oops, please try posting a valid link.</span>
+				</div>
+			</div>
+				<!-- /Reels Search Bar -->
+
+
+		<section class="index-middle">
+
+
+						<div class="section-1">
+
+				<!-- Ad Here  -->
+				<div class="ad">
+					<div class="inner">
+						<div class="limit">
+							<!-- /22100361254/ca-pub-2226043192845725-tag/adx_instadp_index_embedded_desktop -->
+							<div id='div-gpt-ad-1600281966710-0'>
+							  <script>
+							    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1600281966710-0'); });
+							  </script>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+
+			<div class="section-2">
+
+
+
+
+
+			
+				<!-- Reels Text -->
+				<h2>Instagram Reels Video Downloader</h2>
+				<p>If you’re trying to download Instagram Reels that one of your friends posted, there is no way to do it on Instagram. But you can do it easily with our with our website! Search in the top bar.</p>
+
+				<h2>How to Download Instagram Reels Video Online?</h2>
+				<p><b>SEARCH with USERNAME:</b><br> Instagram Reels downloader is fast, easy and simple. Enter a username to search all the reels that user has posted and download them to your desktop or mobile phone.</p>
+
+				<p><b>SEARCH with URL:</b><br> If you copied a URL to a reel you can paste it in the search bar and we will link you directly to the download page.</p>
+
+				<h2>Why download ig Reel?</h2>
+				<p>With our website, you can download your Reel video and share it on other social media. You can also download other amazing Reels from other creators to save them for offline viewing.</p>
+
+				<h2>Our reel video downloader is anonymous</h2>
+				<p>When you download a reel video it will be completely anonymous. However if you are using it for commercial purposes or anything else you should ask for permission from the rightful owner.</p>
+
+				<p>Not affiliated with Instagram and we do not host any of the Instagram Reels on the website. All rights belong to their respective owners.</p>
+				<!-- /End Reels Text -->
+
+			
+
+			</div>
+
+
+			<div class="top-users">
+				<h4>Top Instagrammers</h4>
+				<ul class="users-list">
+					{% for user in top_instagrammers %}
+						<li><a href="{{user.link}}"><i></i>{{user.name}}</a></li>
+					{% endfor %}
+					
+				</ul>
+			</div>
+
+
+			<ul class="articles-list">
+				{% for article in articles_list %}
+				<li>
+					<a href="{{article.link}}">
+						<div class="text">
+							<span class="title">{{article.title}}</span>
+							<span class="summary">{{article.content}}</span>
+						</div>
+					</a>
+				</li>
+				{% endfor %}
+							</ul>
+
+
+		</section>
+
+				<!-- Ad Here  -->
+		<div class="ad">
+			<div class="inner">
+				<div class="limit">
+
+				</div>
+			</div>
+		</div>
+		
+		
+
+	</div>
+</article>
+
+{% endblock %}

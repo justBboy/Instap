@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Content -->
+<article class="content ">
+	<div class="centered">
+
+		<section class="article-top">
+			<span class="text">
+				<h1>{{title}}</h1>
+			</span>
+			{{thumbnail|safe}}	
+		</section>
+
+		<!-- Ad Here  -->
+		<div class="ad">
+			<div class="inner">
+				<div class="limit">
+					<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+					<!-- Instadp [300x250 Fixed] [Other] -->
+					<ins class="adsbygoogle"
+					     style="display:inline-block;width:300px;height:250px"
+					     data-ad-client="ca-pub-3398778452569287"
+					     data-ad-slot="3448478589"></ins>
+					<script>
+					     (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+		</div>
+
+	{{article_content|safe}}	
+		<h2 style="float: left; width: 100%; margin-top: 40px;">Recommended for you:</h2>
+
+		<ul class="articles-list">
+						<li>
+				<a href="/article/2/how-to-check-if-you-accidently-liked-any-instagram-posts.html">
+					<div class="text">
+						<span class="title">How to Check if You Accidently Liked Any Instagram Posts</span>
+						<span class="summary">The most obvious way to tell if you accidentally liked an Instagram post is to look below the post where you are given the option to like, comment, or share. If the heart icon is red, that indicates you liked the post.But what if you are overly paranoid and need to double check that you haven’t accidentall...</span>
+					</div>
+										<div class="thumbnail" style="background-image: url(../../images/articles/How-to-Check-if-You-Accidently-Liked-Any-Instagram-Posts.png);"></div>
+									</a>
+			</li>
+						<li>
+				<a href="/article/3/save-and-create-a-collection-of-your-favorite-instagram-posts.html">
+					<div class="text">
+						<span class="title">Save and Create a Collection of Your Favorite Instagram Posts</span>
+						<span class="summary">The collections feature is basically like having a Pinterest board on Instagram. You can create albums and add your favorite posts. Best of all, this feature is completely private, so no one sees your collections or receives notifications for the pictures you’ve saved.Saving and creating a collection can b...</span>
+					</div>
+										<div class="thumbnail" style="background-image: url(../../images/articles/Save-and-Create-a-Collection-of-Your-Favorite-Instagram-Posts.png);"></div>
+									</a>
+			</li>
+						<li>
+				<a href="/article/4/what-are-instagram-story-highlights8ff6.html?.html">
+					<div class="text">
+						<span class="title">What are Instagram Story Highlights?</span>
+						<span class="summary">Instagram stories are available for 24 hours and provide a quick peek into someone’s life. However, for the stories that deserve a permanent existence, Instagram offers the story highlights feature. Story highlights are categorized posts located on a user’s profile page, right below their bio. These storie...</span>
+					</div>
+										<div class="thumbnail" style="background-image: url(../../images/articles/What-are-Instagram-Story-Highlights.png);"></div>
+									</a>
+			</li>
+					</ul>
+
+	</div>
+</article>
+{% endblock content %}

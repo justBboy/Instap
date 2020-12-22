@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<!-- Content -->
+<article class="content ">
+
+		<div style="float: left; width: 100%; margin-bottom: 15px; text-align: center; ">
+				<!-- /22100361254/ca-pub-2226043192845725-tag/adx_instadp_profile_header_desktop -->
+		<div id='div-gpt-ad-1600889400799-0'>
+		  <script>
+		    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1600889400799-0'); });
+		  </script>
+		</div>
+			</div>
+	
+	<div class="centered">
+
+		{% if is_verified %}
+		<section class="result-account has-cta verified" > <!-- verified has-cta -->
+			<a href="#" class="avatar" onclick="return false;" style="{{user_img_style}}"></a>
+			
+			<div class="info-wrapper">
+				<span class="username">{{username}}<i class="verified"></i></span>
+				<div class="call-to-action">{{call_to_action}}</div>
+				<div class="followers-number">{{num_of_followers}}</div>
+			</div>
+		</section>
+		{% else %}
+		<section class="result-account has-cta" > <!-- verified has-cta -->
+			<a href="#" class="avatar" onclick="return false;" style="{{user_img_style}}"></a>
+			
+			<div class="info-wrapper">
+				<span class="username">{{username}}<i class="verified"></i></span>
+				<div class="call-to-action">{{call_to_action}}</div>
+				<div class="followers-number">{{num_of_followers}}</div>
+			</div>
+		</section>
+		{% endif %}
+
+
+		<ul class="result-tab-selector" >
+			<li class="selected profile"><a href="/profile/{{username}}"><i class="icon"></i><span class="text">Profile</span></a></li>
+			<li class="fullsize"><a href="/fullsize/{{username}}"><i class="icon"></i><span class="text">Full Size</span></a></li>
+			<li class="stories"><a href="/stories/{{username}}"><i class="icon"></i><span class="text">Stories</span></a></li>
+			<li class="reels"><a href="/reels/{{username}}"><i class="icon"></i><span class="text">Reels</span></a></li>
+		</ul>
+		
+
+		<section class="result-content">
+
+			<!-- Result Error -->
+			<div class="result-error" style="display: none;">
+				<div class="error-icon"></div>
+				<span class="text"></span>
+				<span class="options"><a href="anllela_sagra.html">Refresh</a> | <a href="../contact.html">Report</a></span>
+			</div>
+
+			
+			<!-- Result Loading -->
+			<div class="result-loading" style="display:none">
+				<i class="loader rotate"></i>
+			</div>
+
+
+			<!-- Profile Info -->
+			<div class="profile-info">
+				<a class="link" target="_blank" href="https://www.instagram.com/{{username}}/">Open on Instagram</a>
+			</div>
+
+
+									<div class="ad">
+				<div class="inner">
+					<div class="limit">
+						<!-- /22100361254/ca-pub-2226043192845725-tag/adx_instadp_profile_embedded_desktop -->
+						<div id='div-gpt-ad-1601061183187-0'>
+						  <script>
+						    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1601061183187-0'); });
+						  </script>
+						</div>
+					</div>
+				</div>
+			</div>
+						
+
+		</section>
+
+
+		<div style="float: left; width: 100%; margin-bottom: 20px;">
+
+			<h4 style="margin-bottom: 5px;">How to Download Instagram Profile Picture in its Original Quality</h4>
+			<p>With over 800 million active users on Instagram, finding someone’s profile might be a difficult task, especially if the account is set to private. Instagram does not allow you to zoom in on someone’s profile picture, making it impossible to tell if you found the correct account or if the person who sent you a request to follow is someone you know. If you are extra cautious about who you add on Instagram, you might ignore a request or not follow someone back because their tiny profile picture and unique username don’t provide enough information about who they are.</p> 
+			<p>If you’ve ever wanted to zoom in on a profile picture, InstaDP is the way to do it. You can either download the app (Qeek for Instagram) or search usernames on the InstaDP website.</p>
+			<p>All you need to do is search the username and click “download.” You will automatically get to view a good quality, full-size image of that user’s profile picture.</p>
+			<p>Once you download the image, you can save it on your phone to view at any time.</p>
+
+			<br>
+
+			<h4 style="margin-bottom: 5px;">How to Download your Favorite Instagram Story</h4>
+			<p>Instagram allows users to post ephemeral photos or videos on their “story,” which means their content vanishes after 24 hours. If you wish to keep your story indefinitely, you can easily save it to your Instagram archive, story highlights, or your phone’s storage.</p>
+
+			<p>But what if one of your friends or your favorite celebrity posts an epic Instagram story and you want to save it to your phone? Instagram does not allow you to save other stories, yet our website offers a fast and easy way to save anyone’s story:<br>
+			1. Enter a username in the search bar at the top of the page.<br>
+			2. Click on “Stories,” where you will automatically view the user’s story for the day.<br>
+			3. Choose the “download” option to save it to your desktop or mobile phone.
+			</p>
+
+			<br>
+
+			<h4 style="margin-bottom: 5px;">Why Download Instagram Stories?</h4>
+			<p>When you view someone’s story they can check and see who viewed it. If you search and view it on our website the user will not see that you viewed it. Our website allows you to download your story and share it on other social media platforms. You can also download other amazing stories from friends or celebrities and save them for offline viewing.</p>
+
+		</div>
+
+	</div>
+</article>
+
+
+{% endblock %}

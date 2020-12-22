@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Content -->
+<article class="content ">
+
+		<div style="float: left; width: 100%; margin-bottom: 15px; text-align: center; ">
+				<!-- /22100361254/ca-pub-2226043192845725-tag/adx_instadp_reels_header_desktop -->
+		<div id='div-gpt-ad-1601062028891-0'>
+		  <script>
+		    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1601062028891-0'); });
+		  </script>
+		</div>
+			</div>
+	
+	<div class="centered">
+{% if is_verified %}
+		<section class="result-account has-cta verified" > <!-- verified has-cta -->
+			<a href="#" class="avatar" onclick="return false;" style="{{user_img_style}}"></a>
+			
+			<div class="info-wrapper">
+				<span class="username">{{username}}<i class="verified"></i></span>
+				<div class="call-to-action">{{call_to_action}}</div>
+				<div class="followers-number">{{num_of_followers}}</div>
+			</div>
+		</section>
+		{% else %}
+		<section class="result-account has-cta" > <!-- verified has-cta -->
+			<a href="#" class="avatar" onclick="return false;" style="{{user_img_style}}"></a>
+			
+			<div class="info-wrapper">
+				<span class="username">{{username}}<i class="verified"></i></span>
+				<div class="call-to-action">{{call_to_action}}</div>
+				<div class="followers-number">{{num_of_followers}}</div>
+			</div>
+		</section>
+		{% endif %}
+
+
+		<ul class="result-tab-selector" >
+			<li class="profile"><a href="/profile/{{username}}"><i class="icon"></i><span class="text">Profile</span></a></li>
+			<li class="fullsize"><a href="/fullsize/{{username}}"><i class="icon"></i><span class="text">Full Size</span></a></li>
+			<li class="stories"><a href="/stories/{{username}}"><i class="icon"></i><span class="text">Stories</span></a></li>
+			<li class="reels selected"><a href="/reels/{{username}}"><i class="icon"></i><span class="text">Reels</span></a></li>
+		</ul>
+		<section class="result-content">
+
+			<!-- Result Error -->
+			<div class="result-error" style="display: none;">
+				<div class="error-icon"></div>
+				<span class="text"></span>
+				<span class="options"><a href="kingjames.html">Refresh</a> | <a href="../contact.html">Report</a></span>
+			</div>
+
+			<!-- Result Loading -->
+			<!-- Result Private -->
+			<div class="result-private">
+				{{reels_result}}
+			</div>
+
+			<!-- Reels Here -->
+			<ul class="reels-items-list">
+				
+									<!-- Ad Here - Reel  -->
+					<li class="reel-item-ad">
+					<div class="ad">
+						<div class="inner">
+							<div class="limit">
+																<!-- /22100361254/ca-pub-2226043192845725-tag/adx_instadp_reels_embedded_bottom_desktop -->
+								<div id='div-gpt-ad-1601063550772-0'>
+								  <script>
+								    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1601063550772-0'); });
+								  </script>
+								</div>	
+															</div>
+						</div>
+					</div>
+					</li>
+							</ul>
+			<!-- /Reels Here -->
+
+			<!-- Paging - Start
+				1. Add class "prev" to "paging" if previous page available 
+				2. Add class "next" to "paging" if next page available 
+			 -->
+						<div class="paging ">
+				<span class="prev-placeholder">Previous</span>
+				<a href="#" class="prev-link">Previous</a>
+				<span class="next-placeholder">Next</span>
+				<a href="#" class="next-link">Next</a>
+			</div>
+			<!-- /Paging - End -->
+
+		</section>
+
+
+		<div style="float: left; width: 100%; margin-bottom: 20px;">
+
+			<h4 style="margin-bottom: 5px;">Why Download Instagram Reels?</h4>
+			<p>With our website, you can download your Reel video and share it on other social media. You can also download other amazing Reels from other creators to save them for offline viewing.</p>
+
+		</div>
+
+	</div>
+</article>
+
+{% endblock %}

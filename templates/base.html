@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View anyone's Instadp for free in full size. Instagram profile picture viewer lets you zoom any Insta dp in original size, even private profiles.">
+    <meta name="keywords" content="instadp, insta dp, igdp, profile picture viewer, instagram display picture, full size, instagram, display, picture, view, profile, picture, instagram profile picture viewer" />
+    <base >
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta property="og:image" content="{{ url_for('static', filename='images/facebook-share.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="https://instadp.com/images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+    <meta name="apple-itunes-app" content="app-id=651309421">
+    
+    <title>Instadp - View Insta dp at full size - Instagram profile picture</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles3f56.css') }}">
+    <script src="{{ url_for('static', filename='scripts/jquery.js') }}"></script>
+</head>
+<body  class="darkmode">
+    
+    <!-- HEADER SECTION -->
+    
+    <header class="header  home">
+        <div class="centered">
+            <a href="#" class="back-btn"></a>
+            <a href="{{ url_for('index') }}" class="home-btn"></a>
+            <div class="search-btn"><i class="icon"></i>Search username</div>
+            <div class="menu-btn"></div>
+        </div>
+    </header>
+    
+    <!-- SEARCH MODAL -->
+    
+    <div class="search-modal  ">
+        <div class="search-bar">
+            <div class="centered">
+                <div class="back-btn"></div>
+                <input class="search-input" type="text" placeholder="Search username" autofocus>
+                <div class="clear-btn"></div>
+                <div class="search-btn"></div>
+            </div>
+        </div>
+        <div class="search-results">
+            <div class="centered">
+                
+                
+                <!-- Results Options
+                    1. Add url to image to "avatar" div
+                    2. If no name available add "no-name" to "account"
+                    3. If verified add "verified to "account"
+                -->
+                
+                
+                <!-- Search -->
+                <ul class="search-promo-list" style="display: none;">
+                    <li class="item" style="display: block;">
+                        <a class="item-link" target="_blank" href="https://www.followmeterapp.com/">
+                            <div class="logo" style="background-image: url('images/apps/followmeter.png');"></div>
+                            <span class="name">Profile Stalkers</span>
+                            <span class="desc">See who is stalking you on Instagram</span>
+                        </a>
+                        <a class="app-open" target="_blank" href="https://www.followmeterapp.com/"><i></i>GET</a>
+                    </li>
+                </ul>
+                
+                <!-- Search Loading -->
+                <div class="search-loading">
+                    <i class="loader rotate"></i>
+                </div>
+                
+                <!-- Search Error -->
+                <div class="search-error">
+                    <div class="error-icon"></div>
+                    <span class="text">Server could not be reached,<br>try refreshing page in a minute</span>
+                    <span class="options"><a href="#" onclick="refreshSearch(); return false;">Refresh</a> | <a href="contact.html" target="_blank">Report</a></span>
+                </div>
+                
+                <!-- Search No Results -->
+                <div class="search-no-results">
+                    No results found.
+                </div>
+                
+                <!-- Results -->
+                <ul class="results-search-list">
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                    <li class="account"  style="display: none;">
+                        <a class="account-link" href="#">
+                            <div class="avatar"></div>
+                            <span class="username">username</span>
+                            <span class="name">name</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Promoted -->
+                <ul class="results-promoted-list">
+                </ul>
+                
+                <!-- History -->
+                <ul class="results-history-list">
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+ <div class="sidebar">
+        
+        <a href="{{ url_for('index') }}" class="logo">Instadp</a>
+        
+        <span class="sb-sec-title">Menu</span>
+        <ul class="sb-nav-list">
+            <li><a href="{{ url_for('index') }}"><i class="home"></i>Home</a>
+                <li><a href="{{ url_for('articles') }}"><i class="tips"></i>Tips &amp; Tricks</a>
+                    <li><a href="{{ url_for('contact') }}"><i class="contact"></i>Contact</a>
+                    </ul>
+                    
+                    <div class="darkmode-options">
+                        <div class="text">Dark Mode</div>
+                        <div class="button">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="prevent-click"></div>
+                <!-- Footer -->
+                <footer class="footer" id="footer">
+                    <div class="centered">
+                        <div class="logo-links">
+                            <div class="links">
+                                <a class="main-link" href="{{ url_for('index') }}">Instadp</a>
+                                <span class="sub-links"><a href="{{ url_for('contact') }}">Contact</a> 
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                
+                
+                
+                <script src="{{ url_for('static', filename='scripts/functions.js') }}"></script>
+                <script src="{{ url_for('static', filename='scripts/cookie.js') }}"></script>
+                <script src="{{ url_for('static', filename='scripts/app.js') }}"></script>
+            </body>
+            </html> 
